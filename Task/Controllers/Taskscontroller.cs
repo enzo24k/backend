@@ -18,21 +18,24 @@ namespace Task.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Modeltask> AddTask([FromBody] Modeltask newTask)
-        {
-            if (newTask == null)
-            {
-                return BadRequest("A tarefa não pode ser nula.");
-            }
+        public ActionResult<List<Modeltask>>
 
-            if (string.IsNullOrEmpty(newTask.Description) || newTask.Description.Length < 10)
-            {
-                return BadRequest("A descrição da tarefa deve ter no mínimo 10 caracteres.");
-            }
+            addTask(Modeltask newTask) {
+
+
+        
+            if (newTask.Description.Length < 10)
+                    
+            
+            return BadRequest("A tarefa não pode ser nula.");
+            
+
+           newTask.Id = modelTasks.Count > 0 ? modelTasks[modelTasks.Count - 1].Id + 1 : 1;
+            
 
             modelTasks.Add(newTask);
 
-            return CreatedAtAction(nameof(SearchTasks), new { id = newTask.Id }, newTask);
+            return Ok(modelTasks);
         }
 
         [HttpDelete("{id}")]

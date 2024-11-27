@@ -9,15 +9,15 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Task
 build_property.RootNamespace = Task
-build_property.ProjectDir = C:\Users\Aluno\source\repos\Task\Task\
+build_property.ProjectDir = C:\Users\Aluno\Desktop\backend\Task\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Aluno\source\repos\Task\Task
+build_property.MSBuildProjectDirectory = C:\Users\Aluno\Desktop\backend\Task
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Aluno/source/repos/Task/Task/Controllers/Taskcontrollers.razor]
+[C:/Users/Aluno/Desktop/backend/Task/Controllers/Taskcontrollers.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcVGFza2NvbnRyb2xsZXJzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
